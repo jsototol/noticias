@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()"><ion-icon slot="icon-only" name="close-outline"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-title>Distritos de {{nombre }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+
+  <ion-grid fixed>
+    <ion-row class="ion-padding">
+      <ion-col size="12">
+          <ion-img *ngIf="url" [src]="url"></ion-img>
+      </ion-col>
+      <ion-col size="12">
+          <ion-title style="text-align: center;">Distritos</ion-title>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+        <ion-searchbar [debounce]="250" placeholder="Filtrar" (ionChange)="onSearchChange($event)" inputmode="text"></ion-searchbar>
+  <app-articles [articles]="articleFilter"></app-articles>
+</ion-content>

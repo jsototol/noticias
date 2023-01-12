@@ -1,3 +1,5 @@
+
+@import 'animate.css/animate.min';
 /*
  * App Global CSS
  * ----------------------------------------------------------------------------
@@ -24,3 +26,7 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.text-primary{
+  color: var(--ion-color-primary)
+}
