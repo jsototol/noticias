@@ -22,9 +22,13 @@
     "@angular/router": "^15.0.0",
     "@capacitor/app": "4.1.1",
     "@capacitor/core": "4.6.1",
+    "@capacitor/geolocation": "^4.1.0",
     "@capacitor/haptics": "4.1.0",
     "@capacitor/keyboard": "4.1.0",
     "@capacitor/status-bar": "4.1.1",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/geolocation": "^5.36.0",
+    "@ionic-native/google-maps": "^5.5.0",
     "@ionic/angular": "^6.1.9",
     "@ionic/cordova-builders": "^7.0.0",
     "@ng-select/ng-select": "^10.0.3",
@@ -35,6 +39,7 @@
     "ionicons": "^6.0.3",
     "natives": "^1.1.6",
     "rxjs": "~7.5.0",
+    "rxjs-observable": "^0.0.7",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -55,6 +60,7 @@
     "@typescript-eslint/parser": "5.3.0",
     "cordova-android": "^10.1.2",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-googlemaps": "^2.7.1",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -81,7 +87,8 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-googlemaps": {}
     },
     "platforms": [
       "android",
